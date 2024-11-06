@@ -8,7 +8,7 @@ website:
     background: primary
     search: false
     left:
-      - text: "Home"
+      - text: "Acceuil"
         href: index.qmd
       - text: "Statistique descriptive"
         href: statistique.qmd
