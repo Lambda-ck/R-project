@@ -7,6 +7,11 @@ website:
   navbar:
     background: primary
     search: false
+    tools:
+      - icon: github
+        menu:
+          - text: Github link
+            href: https://github.com/Lambda-ck/R-project.git
     left:
       - text: "Acceuil"
         href: index.qmd
@@ -15,17 +20,17 @@ website:
       - text: "Analyse de données"
         href: analyse.qmd
         
-    sidebar: 
-      - title: "author"
-        style: "docked"
-        background: light
-        contents:
-          - text: "-hello-"
-            href: hello.qmd
+  sidebar:
+      style: "docked"
+      background: light
+      contents:
+        - text: "Membres du groupe"
+          href: membre.qmd
+  
         
 format:
   html:
-    theme: cosmo
+    theme: cosmos
     css: styles.css
     toc: true
 
