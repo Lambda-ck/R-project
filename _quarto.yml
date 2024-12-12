@@ -24,8 +24,11 @@ website:
       style: "docked"
       background: light
       contents:
-        - text: "Membres du groupe"
-          href: membre.qmd
+        - text: "Membres du groupe :"
+        - "- Emma Andre"
+        - "- Jade Ducos"
+        - "- Julien Lascaux"
+        - "- Lucas Coussy"
   
         
 format:

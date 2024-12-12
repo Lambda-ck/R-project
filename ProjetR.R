@@ -33,7 +33,7 @@ ipc_combined <- ipc_combined[nchar(ipc_combined$IPC_code4) == 4, ]
 # On garde une ligne unique pour chaque IPC_code4 avec sa première description associée
 ipc_unique <- ipc_combined[!duplicated(ipc_combined$IPC_code4), c("IPC_code4", "Description")]
 
-head(ipc_unique)
+#head(ipc_unique)
 
 #rendez vous à la fin du code pour utiliser ces ipc_unique en les reliant aux entreprises.
 
@@ -102,7 +102,7 @@ for(company in all_companies){
   
   most_frequent_city<- names(which.max(table(company_data$city)))  # Ville la plus fréquente
   #table(city) trouve le nombre d'occurences de chaque ville et which.max trouve LE plus fréquent.
-  
+
   most_frequent_dept <- names(which.max(table(company_data$reg_code))) #département le plus fréquent
   
   most_frequent_ipc <- names(which.max(table(company_data$IPC_code4))) #IPC le plus fréquent
@@ -133,5 +133,7 @@ for(company in all_companies){
 }
 
 edit(base_brevets)
+
+base_brevets
 
 

@@ -1,13 +1,3 @@
----
-title: "R project"
-html: 
-  code-background: true
----
-
-Welcome on our website
-
-```{r intro0, echo=TRUE, message = FALSE, eval = TRUE, include=FALSE}
-
 library(dplyr)
 
 # Initialize an empty data frame
@@ -80,13 +70,5 @@ base_brevets <- data_combined %>%
   )
 
 # Inspect the resulting data frame
-#edit(base_brevets)
-print(length(base_brevets))
+edit(base_brevets)
 
-```
-
-```{r intro1, echo=FALSE,results='asis',error=FALSE,warning=FALSE}
-#install.packages('knitr')
-library('knitr')
-kable(head(base_brevets[,1:5],20), format = "markdown")
-```
