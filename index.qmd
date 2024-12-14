@@ -1,5 +1,5 @@
 ---
-title: "R project"
+title: "Projet R"
 html: 
   code-background: true
 ---

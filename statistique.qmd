@@ -6,9 +6,13 @@ format: html
 ## **Statistiques pour la base brevet**
 
 ### **Statistiques générales des brevets**
-```{r chunk0, echo=TRUE,error=FALSE,warning=FALSE,eval=FALSE}
+
+```{r import0, echo=TRUE,error=FALSE,warning=FALSE,message=FALSE, include=TRUE}
 #install.packages('dplyr')
 library(dplyr)
+```
+
+```{r chunk0, echo=TRUE,error=FALSE,warning=FALSE, include=TRUE}
 merge_data = read.csv("base_emp_inno.csv")
 data_brevet = read.csv("base_brevets.csv")
 data_emp = read.csv("base_emp.csv")
