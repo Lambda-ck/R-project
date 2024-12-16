@@ -18,7 +18,7 @@ website:
       - text: "Statistique descriptive"
         href: statistique.qmd
       - text: "Analyse de données"
-        href: Analyse des données.qmd
+        href: analyse.qmd
         
   sidebar:
       style: "docked"

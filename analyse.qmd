@@ -26,7 +26,7 @@ data <- read_csv("base_emp_inno.csv")
 
 ```
 
-###Lien entre les dépôts de brevet et l'experience requise
+### **Lien entre les dépôts de brevet et l'experience requise**
 
 ```{r depot0, echo= TRUE, warning=FALSE, message=FALSE}
 
@@ -86,7 +86,7 @@ ggplot(data_cleaned, aes(x = avg_req_exp, y = n_patents)) +
 
 On voit ici qu'il n'existe pas de lien significatif entre le nombre de brevets déposés et l'expérience requise moyenne des employés. La dispersion des points et la régression plate indiquent que l'expérience demandée n'influence pas directement le niveau d'innovation, avec une majorité des offres exigeant moins de 4 ans d'expérience.
 
-###Répartition des brevets sur le territoire français
+###**Répartition des brevets sur le territoire français**
 
 ```{r brevet0, echo=TRUE, message=FALSE, warning=FALSE}
 
@@ -136,7 +136,7 @@ La carte montre une distribution inégale des brevets en France. Quelques dépar
 
 Cette carte met en évidence des disparités régionales en matière d'innovation, soulignant l'importance des écosystèmes locaux pour favoriser la production de brevets.
 
-###Quels sont les codes IPC les plus présents?
+###**Quels sont les codes IPC les plus présents?**
 
 ```{r ipc0, echo=TRUE}
 data_cleaned <- data %>%
@@ -176,7 +176,7 @@ Enfin, les autres codes IPC, comme C07C (composés organiques), B60C (pneus) et 
 
 En conclusion, le graphique révèle que les secteurs pharmaceutique, électronique et télécommunications sont des moteurs majeurs de l'innovation en matière de brevets, avec une concentration élevée sur certains codes spécifiques.
 
-### Est-ce que un grand nombre de dépôts de brevets a un lien avec les offres d'emploi et les compétences recherchées par les entreprises ?
+### **Est-ce que un grand nombre de dépôts de brevets a un lien avec les offres d'emploi et les compétences recherchées par les entreprises ?**
 
 ```{r analyse0, echo=TRUE}
 
@@ -257,9 +257,9 @@ ggplot(skill_summary, aes(x = reorder(top_skill_req, total_patents), y = total_p
 
 Le graphique montre que les compétences les plus liées à l'innovation combinent des compétences techniques et humaines. Les compétences techniques comme Python, SQL, Git, et Statistique sont essentielles pour la gestion des données et le développement, tandis que des compétences interpersonnelles comme le travail en équipe et la communication jouent un rôle clé dans la réussite des projets innovants. Cela souligne que l'innovation repose autant sur la maîtrise d'outils spécialisés que sur une bonne dynamique collaborative.
 
-## Quels sont les compétences les plus présentes
+## **Quels sont les compétences les plus présentes**
 
-###pour les salaires les plus élevés
+###**Pour les salaires les plus élevés**
 
 ```{r competence0, echo=TRUE}
 
@@ -294,7 +294,7 @@ ggplot(skill_salary, aes(label = top_skill_req, size = avg_wage)) +
 
 Le Word Cloud montre que les compétences techniques comme C++, Git, NLP, AWS, et Spark sont celles associées aux salaires les plus élevés dans les entreprises innovantes. Cela reflète l'importance des domaines liés à la programmation, au cloud computing et à l'intelligence artificielle. Par ailleurs, des compétences en visualisation de données (Tableau, Power BI) et en analyse restent également valorisées. Enfin, des compétences transversales comme la résolution de problèmes et la communication apparaissent, bien que moins liées aux rémunérations élevées.
 
-### pour le dépôt de brevet
+###**Pour le dépôt de brevet**
 
 ```{r depot_brevet, echo=TRUE}
 
@@ -334,7 +334,8 @@ En conséquence, les compétences les plus liées à l'innovation sont fortement
 
 De plus,l'analyse liée aux salaires moyens est complexe étant donnée le grand nombre de données manquantes (NA) dans la base et risque de ne pas etre significative. nous avons donc décider de ne pas se pencher plus sur cet aspect malgré son importance dans le sujet.
 
-\##**CONCLUSION** Cette analyse met en lumière les dynamiques entre innovation et divers facteurs liés aux entreprises. Les compétences techniques comme Git, SQL, Python, et Spark apparaissent fortement liées à l'innovation, reflétant l'importance du développement logiciel et de la gestion des données dans les secteurs innovants. Cependant, des compétences transversales telles que le travail en équipe et la communication jouent également un rôle clé.
+##**CONCLUSION** 
+Cette analyse met en lumière les dynamiques entre innovation et divers facteurs liés aux entreprises. Les compétences techniques comme Git, SQL, Python, et Spark apparaissent fortement liées à l'innovation, reflétant l'importance du développement logiciel et de la gestion des données dans les secteurs innovants. Cependant, des compétences transversales telles que le travail en équipe et la communication jouent également un rôle clé.
 
 L’étude révèle par ailleurs que l’expérience requise moyenne n’a pas d’impact significatif sur le nombre de brevets déposés, indiquant que l’innovation n’est pas nécessairement liée à des niveaux élevés d’expérience professionnelle.
 
