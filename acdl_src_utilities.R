@@ -94,3 +94,4 @@ filtrer_dept <- function(x) {
     return(NA)  # Si aucun département valide n'est trouvé
   }
 }
+

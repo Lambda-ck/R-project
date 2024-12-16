@@ -86,3 +86,4 @@ head(base_brevets)
 
 #enregistrer la base
 write.csv(base_brevets, "base_brevets.csv", row.names = FALSE)
+

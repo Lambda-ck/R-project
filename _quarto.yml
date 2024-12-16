@@ -13,12 +13,12 @@ website:
           - text: Github link
             href: https://github.com/Lambda-ck/R-project.git
     left:
-      - text: "Acceuil"
+      - text: "Accueil"
         href: index.qmd
       - text: "Statistique descriptive"
         href: statistique.qmd
       - text: "Analyse de données"
-        href: analyse.qmd
+        href: Analyse des données.qmd
         
   sidebar:
       style: "docked"
