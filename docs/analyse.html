@@ -192,11 +192,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#est-ce-que-un-grand-nombre-de-dépôts-de-brevets-a-un-lien-avec-les-offres-demploi-et-les-compétences-recherchées-par-les-entreprises" id="toc-est-ce-que-un-grand-nombre-de-dépôts-de-brevets-a-un-lien-avec-les-offres-demploi-et-les-compétences-recherchées-par-les-entreprises" class="nav-link active" data-scroll-target="#est-ce-que-un-grand-nombre-de-dépôts-de-brevets-a-un-lien-avec-les-offres-demploi-et-les-compétences-recherchées-par-les-entreprises">Est-ce que un grand nombre de dépôts de brevets a un lien avec les offres d’emploi et les compétences recherchées par les entreprises ?</a></li>
-  <li><a href="#quels-sont-les-compétences-les-plus-présentes" id="toc-quels-sont-les-compétences-les-plus-présentes" class="nav-link" data-scroll-target="#quels-sont-les-compétences-les-plus-présentes">Quels sont les compétences les plus présentes</a>
+  <li><a href="#lien-entre-les-dépôts-de-brevet-et-lexperience-requise" id="toc-lien-entre-les-dépôts-de-brevet-et-lexperience-requise" class="nav-link active" data-scroll-target="#lien-entre-les-dépôts-de-brevet-et-lexperience-requise"><strong>Lien entre les dépôts de brevet et l’experience requise</strong></a></li>
+  <li><a href="#répartition-des-brevets-sur-le-territoire-français" id="toc-répartition-des-brevets-sur-le-territoire-français" class="nav-link" data-scroll-target="#répartition-des-brevets-sur-le-territoire-français"><strong>Répartition des brevets sur le territoire français</strong></a></li>
+  <li><a href="#quels-sont-les-codes-ipc-les-plus-présents" id="toc-quels-sont-les-codes-ipc-les-plus-présents" class="nav-link" data-scroll-target="#quels-sont-les-codes-ipc-les-plus-présents"><strong>Quels sont les codes IPC les plus présents?</strong></a></li>
+  <li><a href="#est-ce-que-un-grand-nombre-de-dépôts-de-brevets-a-un-lien-avec-les-offres-demploi-et-les-compétences-recherchées-par-les-entreprises" id="toc-est-ce-que-un-grand-nombre-de-dépôts-de-brevets-a-un-lien-avec-les-offres-demploi-et-les-compétences-recherchées-par-les-entreprises" class="nav-link" data-scroll-target="#est-ce-que-un-grand-nombre-de-dépôts-de-brevets-a-un-lien-avec-les-offres-demploi-et-les-compétences-recherchées-par-les-entreprises"><strong>Est-ce que un grand nombre de dépôts de brevets a un lien avec les offres d’emploi et les compétences recherchées par les entreprises ?</strong></a></li>
+  <li><a href="#quels-sont-les-compétences-les-plus-présentes" id="toc-quels-sont-les-compétences-les-plus-présentes" class="nav-link" data-scroll-target="#quels-sont-les-compétences-les-plus-présentes"><strong>Quels sont les compétences les plus présentes</strong></a>
   <ul class="collapse">
-  <li><a href="#pour-le-dépôt-de-brevet" id="toc-pour-le-dépôt-de-brevet" class="nav-link" data-scroll-target="#pour-le-dépôt-de-brevet">pour le dépôt de brevet</a></li>
+  <li><a href="#pour-les-salaires-les-plus-élevés" id="toc-pour-les-salaires-les-plus-élevés" class="nav-link" data-scroll-target="#pour-les-salaires-les-plus-élevés"><strong>Pour les salaires les plus élevés</strong></a></li>
+  <li><a href="#pour-le-dépôt-de-brevet" id="toc-pour-le-dépôt-de-brevet" class="nav-link" data-scroll-target="#pour-le-dépôt-de-brevet"><strong>Pour le dépôt de brevet</strong></a></li>
   </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><strong>CONCLUSION</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -242,7 +247,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">#charger les données : </span></span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"base_emp_inno.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>###Lien entre les dépôts de brevet et l’experience requise</p>
+<section id="lien-entre-les-dépôts-de-brevet-et-lexperience-requise" class="level3">
+<h3 class="anchored" data-anchor-id="lien-entre-les-dépôts-de-brevet-et-lexperience-requise"><strong>Lien entre les dépôts de brevet et l’experience requise</strong></h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filtrer les données pour exclure les NA</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>data_clean <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
@@ -306,7 +312,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>On voit ici qu’il n’existe pas de lien significatif entre le nombre de brevets déposés et l’expérience requise moyenne des employés. La dispersion des points et la régression plate indiquent que l’expérience demandée n’influence pas directement le niveau d’innovation, avec une majorité des offres exigeant moins de 4 ans d’expérience.</p>
-<p>###Répartition des brevets sur le territoire français</p>
+</section>
+<section id="répartition-des-brevets-sur-le-territoire-français" class="level3">
+<h3 class="anchored" data-anchor-id="répartition-des-brevets-sur-le-territoire-français"><strong>Répartition des brevets sur le territoire français</strong></h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Nettoyer les données et filtrer les colonnes nécessaires</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>data_cleaned <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
@@ -364,7 +372,9 @@ Geodetic CRS:  WGS 84</code></pre>
 <p>La carte montre une distribution inégale des brevets en France. Quelques départements, représentés en bleu foncé, concentrent la majorité des brevets, notamment dans des régions comme la Nouvelle-Aquitaine et certains départements centraux. Cela reflète probablement la présence de pôles technologiques, d’entreprises innovantes ou de centres de recherche et développement.</p>
 <p>À l’inverse, la majorité des départements en bleu clair ou en gris présentent une activité d’innovation plus faible, ce qui peut être lié à des facteurs économiques, une moindre densité industrielle ou une absence d’infrastructures R&amp;D.</p>
 <p>Cette carte met en évidence des disparités régionales en matière d’innovation, soulignant l’importance des écosystèmes locaux pour favoriser la production de brevets.</p>
-<p>###Quels sont les codes IPC les plus présents?</p>
+</section>
+<section id="quels-sont-les-codes-ipc-les-plus-présents" class="level3">
+<h3 class="anchored" data-anchor-id="quels-sont-les-codes-ipc-les-plus-présents"><strong>Quels sont les codes IPC les plus présents?</strong></h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>data_cleaned <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ipc_main_code, n_patents) <span class="sc">%&gt;%</span></span>
@@ -404,8 +414,9 @@ Geodetic CRS:  WGS 84</code></pre>
 <p>Les codes suivants, H01L (dispositifs semi-conducteurs) et H04W (réseaux de télécommunications sans fil), montrent également une activité significative, soulignant l’importance des secteurs de l’électronique et des télécommunications dans l’innovation.</p>
 <p>Enfin, les autres codes IPC, comme C07C (composés organiques), B60C (pneus) et G01S (systèmes de radar), indiquent une diversité des domaines technologiques, avec une présence notable dans la chimie, l’automobile et les systèmes de détection.</p>
 <p>En conclusion, le graphique révèle que les secteurs pharmaceutique, électronique et télécommunications sont des moteurs majeurs de l’innovation en matière de brevets, avec une concentration élevée sur certains codes spécifiques.</p>
+</section>
 <section id="est-ce-que-un-grand-nombre-de-dépôts-de-brevets-a-un-lien-avec-les-offres-demploi-et-les-compétences-recherchées-par-les-entreprises" class="level3">
-<h3 class="anchored" data-anchor-id="est-ce-que-un-grand-nombre-de-dépôts-de-brevets-a-un-lien-avec-les-offres-demploi-et-les-compétences-recherchées-par-les-entreprises">Est-ce que un grand nombre de dépôts de brevets a un lien avec les offres d’emploi et les compétences recherchées par les entreprises ?</h3>
+<h3 class="anchored" data-anchor-id="est-ce-que-un-grand-nombre-de-dépôts-de-brevets-a-un-lien-avec-les-offres-demploi-et-les-compétences-recherchées-par-les-entreprises"><strong>Est-ce que un grand nombre de dépôts de brevets a un lien avec les offres d’emploi et les compétences recherchées par les entreprises ?</strong></h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Nettoyer les données et agréger par secteur</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>sector_summary <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
@@ -491,8 +502,9 @@ Geodetic CRS:  WGS 84</code></pre>
 <p>Le graphique montre que les compétences les plus liées à l’innovation combinent des compétences techniques et humaines. Les compétences techniques comme Python, SQL, Git, et Statistique sont essentielles pour la gestion des données et le développement, tandis que des compétences interpersonnelles comme le travail en équipe et la communication jouent un rôle clé dans la réussite des projets innovants. Cela souligne que l’innovation repose autant sur la maîtrise d’outils spécialisés que sur une bonne dynamique collaborative.</p>
 </section>
 <section id="quels-sont-les-compétences-les-plus-présentes" class="level2">
-<h2 class="anchored" data-anchor-id="quels-sont-les-compétences-les-plus-présentes">Quels sont les compétences les plus présentes</h2>
-<p>###pour les salaires les plus élevés</p>
+<h2 class="anchored" data-anchor-id="quels-sont-les-compétences-les-plus-présentes"><strong>Quels sont les compétences les plus présentes</strong></h2>
+<section id="pour-les-salaires-les-plus-élevés" class="level3">
+<h3 class="anchored" data-anchor-id="pour-les-salaires-les-plus-élevés"><strong>Pour les salaires les plus élevés</strong></h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Nettoyer les données : séparer les compétences multiples et agréger par salaire moyen</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>skill_salary <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
@@ -528,8 +540,9 @@ Geodetic CRS:  WGS 84</code></pre>
 </div>
 </div>
 <p>Le Word Cloud montre que les compétences techniques comme C++, Git, NLP, AWS, et Spark sont celles associées aux salaires les plus élevés dans les entreprises innovantes. Cela reflète l’importance des domaines liés à la programmation, au cloud computing et à l’intelligence artificielle. Par ailleurs, des compétences en visualisation de données (Tableau, Power BI) et en analyse restent également valorisées. Enfin, des compétences transversales comme la résolution de problèmes et la communication apparaissent, bien que moins liées aux rémunérations élevées.</p>
+</section>
 <section id="pour-le-dépôt-de-brevet" class="level3">
-<h3 class="anchored" data-anchor-id="pour-le-dépôt-de-brevet">pour le dépôt de brevet</h3>
+<h3 class="anchored" data-anchor-id="pour-le-dépôt-de-brevet"><strong>Pour le dépôt de brevet</strong></h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Nettoyer les données : séparer les compétences multiples et agréger par le nombre de brevets</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>skill_patents <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
@@ -568,13 +581,16 @@ Geodetic CRS:  WGS 84</code></pre>
 <p>D’autres compétences telles que Tableau, AWS, et Azure montrent également un lien fort avec l’innovation, notamment dans les domaines du cloud computing et de la visualisation des données. Enfin, des compétences transversales comme le travail en équipe (“équipe”) et la collaboration apparaissent aussi, soulignant leur rôle dans la réussite des projets innovants.</p>
 <p>En conséquence, les compétences les plus liées à l’innovation sont fortement orientées vers la technologie des données (SQL, Spark, Python) et les outils de collaboration et de développement (Git, Excel), tout en intégrant des compétences interpersonnelles comme le travail d’équipe.</p>
 <p>De plus,l’analyse liée aux salaires moyens est complexe étant donnée le grand nombre de données manquantes (NA) dans la base et risque de ne pas etre significative. nous avons donc décider de ne pas se pencher plus sur cet aspect malgré son importance dans le sujet.</p>
-<p>##<strong>CONCLUSION</strong> Cette analyse met en lumière les dynamiques entre innovation et divers facteurs liés aux entreprises. Les compétences techniques comme Git, SQL, Python, et Spark apparaissent fortement liées à l’innovation, reflétant l’importance du développement logiciel et de la gestion des données dans les secteurs innovants. Cependant, des compétences transversales telles que le travail en équipe et la communication jouent également un rôle clé.</p>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion"><strong>CONCLUSION</strong></h2>
+<p>Cette analyse met en lumière les dynamiques entre innovation et divers facteurs liés aux entreprises. Les compétences techniques comme Git, SQL, Python, et Spark apparaissent fortement liées à l’innovation, reflétant l’importance du développement logiciel et de la gestion des données dans les secteurs innovants. Cependant, des compétences transversales telles que le travail en équipe et la communication jouent également un rôle clé.</p>
 <p>L’étude révèle par ailleurs que l’expérience requise moyenne n’a pas d’impact significatif sur le nombre de brevets déposés, indiquant que l’innovation n’est pas nécessairement liée à des niveaux élevés d’expérience professionnelle.</p>
 <p>Enfin, les secteurs comme l’industrie high-tech, la pharmaceutique et l’aéronautique se distinguent par une forte concentration de brevets, bien que le lien entre innovation et offres d’emploi varie selon les secteurs.</p>
 <p>En conclusion, l’innovation repose principalement sur des compétences techniques spécialisées et une dynamique collaborative, tandis que son impact sur l’emploi et les exigences professionnelles diffère selon les contextes sectoriels.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
